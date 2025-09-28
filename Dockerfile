@@ -14,4 +14,5 @@ COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
 
 # this specifies the command to run when the container starts
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
